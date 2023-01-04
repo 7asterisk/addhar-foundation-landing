@@ -1,0 +1,14 @@
+.uk-navbar-nav>li>a {
+    font-size: medium;
+}
+.uk-overlay-primary {
+    background: #006828b0;
+}
+.uk-section-success{
+    background: #006828;
+}
+
+.uk-navbar-container:not(.uk-navbar-transparent) {
+    box-shadow: 0 1px 6px 0 rgb(118 118 118 / 25%);
+    background: #fff;
+}
