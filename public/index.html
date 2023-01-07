@@ -1,192 +1,342 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>आधार फाऊंडेशन</title>
+    <!-- UIkit CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/uikit@3.15.19/dist/css/uikit.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700;1,800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles/style.css" />
 
-<head>
-	<meta charset="UTF-8" />
-	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	<title>Document</title>
-	<!-- UIkit CSS -->
-	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.15.19/dist/css/uikit.min.css" />
-	<link rel="stylesheet" href="./styles/style.css" />
-	
-	<!-- UIkit JS -->
-	<script src="https://cdn.jsdelivr.net/npm/uikit@3.15.19/dist/js/uikit.min.js"></script>
-	<script src="https://cdn.jsdelivr.net/npm/uikit@3.15.19/dist/js/uikit-icons.min.js"></script>
-</head>
+    <!-- UIkit JS -->
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.15.19/dist/js/uikit.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.15.19/dist/js/uikit-icons.min.js"></script>
+  </head>
 
-<body>
-	<div class="uk-preserve-color">
-
-		<div
-			uk-sticky="start: 200; animation: uk-animation-slide-top; sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky; cls-inactive: uk-navbar-transparent ">
-			<nav class="uk-navbar-container" uk-navbar>
-				<div class="uk-navbar-left uk-margin-small-left">
-					<a class="uk-navbar-item uk-logo uk-padding-small" href="#">
-						<img src="./assets/imgs/addhar foundatio logo.png" width="200" alt="">
-					</a>
-				</div>
-				<div class="uk-navbar-right uk-margin-medium-right">
-					<ul class="uk-navbar-nav">
+  <body>
+    <div class="uk-preserve-color">
+      <div
+        uk-sticky="start: 200; animation: uk-animation-slide-top; sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky; cls-inactive: uk-navbar-transparent "
+      >
+        <nav class="uk-navbar-container" uk-navbar>
+          <div class="uk-navbar-left uk-margin-small-left">
+            <a class="uk-navbar-item uk-logo uk-padding-small" href="#">
+              <img
+                src="./assets/imgs/addhar foundatio logo.png"
+                width="200"
+                alt=""
+              />
+            </a>
+          </div>
+          <div class="uk-navbar-right uk-margin-medium-right">
+            <!-- <a
+              href=""
+              class="uk-icon-button uk-margin-small-right"
+              uk-icon="twitter"
+            ></a>
+            <a
+              href=""
+              class="uk-icon-button uk-margin-small-right"
+              uk-icon="facebook"
+            ></a>
+            <a href="" class="uk-icon-button" uk-icon="youtube"></a> -->
+            <!-- <ul class="uk-navbar-nav">
 						<li class="uk-active uk-text-bolder"><a href="#">Home</a></li>
 						<li  class=" uk-text-bolder"><a href="#">About Us</a></li>
-					</ul>
-				</div>
-			</nav>
-		</div>
+					</ul> -->
+          </div>
+        </nav>
+      </div>
 
-		<div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1"
-			uk-slideshow="autoplay: true;ratio: 8:3">
+      <div
+        class="uk-position-relative uk-visible-toggle uk-light"
+        tabindex="-1"
+        uk-slideshow="autoplay: true;ratio: 8:3"
+      >
+        <ul class="uk-slideshow-items">
+          <li>
+            <img src="./assets/imgs/top_slider1.png" alt="" uk-cover />
+          </li>
+          <li>
+            <img src="./assets/imgs/top_slider2.png" alt="" uk-cover />
+          </li>
+          <li>
+            <img src="./assets/imgs/top_slider3.png" alt="" uk-cover />
+          </li>
+        </ul>
 
-			<ul class="uk-slideshow-items">
-				<li>
-					<img src="https://getuikit.com/docs/images/dark.jpg" alt="" uk-cover>
-					<div class="uk-overlay uk-overlay-primary uk-position-bottom uk-text-center">
-						<h3 class="uk-margin-remove">Overlay Bottom</h3>
-						<p class="uk-margin-remove">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-					</div>
-				</li>
-				<li>
-					<img src="https://getuikit.com/docs/images/light.jpg" alt="" uk-cover>
-					<div class="uk-overlay uk-overlay-primary uk-position-bottom uk-text-center">
-						<h3 class="uk-margin-remove">Overlay Bottom</h3>
-						<p class="uk-margin-remove">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-					</div>
-				</li>
-				<li>
-					<img src="https://getuikit.com/docs/images/photo.jpg" alt="" uk-cover>
-					<div class="uk-overlay uk-overlay-primary uk-position-bottom uk-text-center">
-						<h3 class="uk-margin-remove">Overlay Bottom</h3>
-						<p class="uk-margin-remove">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-					</div>
-				</li>
-			</ul>
+        <a
+          class="uk-position-center-left uk-position-small uk-hidden-hover"
+          href="#"
+          uk-slidenav-previous
+          uk-slideshow-item="previous"
+        ></a>
+        <a
+          class="uk-position-center-right uk-position-small uk-hidden-hover"
+          href="#"
+          uk-slidenav-next
+          uk-slideshow-item="next"
+        ></a>
+      </div>
+    </div>
 
-			<a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous
-				uk-slideshow-item="previous"></a>
-			<a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next
-				uk-slideshow-item="next"></a>
+    <div class="uk-section uk-section-large">
+      <div class="uk-container">
+        <h2 class="uk-margin-medium-bottom">
+          आधार फाउंडेशन- संगठन स्ताफित करने का कारण
+        </h2>
+        <div
+          class="uk-child-width-1-4@m"
+          uk-grid
+          uk-scrollspy="cls: uk-animation-fade; target: .uk-card; delay: 500"
+        >
+          <div>
+            <div class="uk-card uk-card-default">
+              <div class="uk-card-media-top">
+                <img
+                  src="./assets/imgs/disable_design.jpg"
+                  width="1800"
+                  height="1200"
+                  alt=""
+                />
+              </div>
+              <div class="uk-card-body">
+                <h3 class="uk-card-title">
+                  विकलांग सैनिकों के लिए आवास में सार्वभौमिक डिजाइन की आवश्यकता
+                  पर चर्चा करने के लिए
+                </h3>
+              </div>
+            </div>
+          </div>
 
-		</div>
-	</div>
+          <div>
+            <div class="uk-card uk-card-default">
+              <div class="uk-card-media-top">
+                <img
+                  src="./assets/imgs/ramp.jpg"
+                  width="1800"
+                  height="1200"
+                  alt=""
+                />
+              </div>
+              <div class="uk-card-body">
+                <h3 class="uk-card-title">
+                  एक समय के बाद उन पर कोई ध्यान नहीं देता एवं सरकार भी उनकी कोई
+                  जानकारी नहीं रखती या कोई उनके त्याग को महत्त्व नहीं देता।
+                </h3>
+              </div>
+            </div>
+          </div>
 
+          <div>
+            <div class="uk-card uk-card-default">
+              <div class="uk-card-media-top">
+                <img
+                  src="./assets/imgs/wheelchare.jpg"
+                  width="1800"
+                  height="1200"
+                  alt=""
+                />
+              </div>
+              <div class="uk-card-body">
+                <h3 class="uk-card-title">
+                  विकलांग अधिकारों सहित विकलांग लोगों के लिए डिजाइन विचार और
+                  कानून विनियमन और नीतियों पर चर्चा करने के लिए
+                </h3>
+              </div>
+            </div>
+          </div>
 
+          <div>
+            <div class="uk-card uk-card-default">
+              <div class="uk-card-media-top">
+                <img
+                  src="./assets/imgs/happy_home.png"
+                  width="1800"
+                  height="1200"
+                  alt=""
+                />
+              </div>
+              <div class="uk-card-body">
+                <h3 class="uk-card-title">
+                  जब भारतीय सैनिक अक्षमताओं के साथ काम से घर लौटते हैं तो वे
+                  अक्सर दो बार पीड़ित होते हैं- पहले अपनी लड़ाई की चोटों से और
+                  फिर परिवार के अपमान से
+                </h3>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
-	<div class="uk-section uk-section-large">
-		<div class="uk-container">
-			<h1 class="uk-article-title uk-margin-medium-bottom">The Problems</h1>
-			<div class="uk-child-width-1-3@m" uk-grid
-				uk-scrollspy="cls: uk-animation-fade; target: .uk-card; delay: 500">
-				<div>
-					<div class="uk-card uk-card-default uk-card-body">
-						<h3 class="uk-card-title">Fade</h3>
-						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-					</div>
-				</div>
-				<div>
-					<div class="uk-card uk-card-default uk-card-body">
-						<h3 class="uk-card-title">Fade</h3>
-						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-					</div>
-				</div>
-				<div>
-					<div class="uk-card uk-card-default uk-card-body">
-						<h3 class="uk-card-title">Fade</h3>
-						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
+    <div>
+      <!-- <div
+        class="uk-background-fixed uk-background-center-center uk-height-xlarge"
+        style="
+          background-image: url(./assets/imgs/happy_people.png);
+          background-size: cover;
+          background-repeat: no-repeat;
+          background-position: center center;
+        "
+      > -->
+      <div class="uk-section">
+        <div class="uk-container">
+          <h2 class="uk-margin-medium-bottom">हमारा उद्देश्य व लक्ष्य</h2>
+          <div
+            class="uk-child-width-1-2@m"
+            uk-grid
+            uk-scrollspy="cls: uk-animation-fade; target: .uk-card; delay: 500"
+          >
+            <div>
+              <div class="uk-card uk-card-default">
+                <div class="uk-card-media-top">
+                  <img
+                    src="./assets/imgs/house.png"
+                    width="1800"
+                    height="1200"
+                    alt=""
+                  />
+                </div>
+                <div class="uk-card-body">
+                  <h3 class="uk-card-title">
+                    आधार फाउंडेशन एक पंजीकृत (एनजीओ) है शहीद सैनिकों के पुनर्वास
+                    एवं स्मारक के माध्यम से शहीद विधवाओं के जीवन स्तर में सुधार
+                    हेतु गैर सरकारी संगठन का गठन किया गया
+                  </h3>
+                </div>
+              </div>
+            </div>
 
+            <div>
+              <div class="uk-card uk-card-default">
+                <div class="uk-card-media-top">
+                  <img
+                    src="./assets/imgs/memorial.png"
+                    width="1800"
+                    height="1200"
+                    alt=""
+                  />
+                </div>
+                <div class="uk-card-body">
+                  <h3 class="uk-card-title">
+                    आधार फाउंडेशन गेली पाच वर्ष देशातील सेनेवर वीरगती प्राप्त
+                    झालेल्या सैनिकांच्या वीर पत्नी व परमवीर पदक प्राप्त झालेल्या
+                    सैनिकांचे व त्यांच्या परिवारांचे पुनर्वसन करणे व वीरगती
+                    प्राप्त झालेल्या जवानांचे कपडे मेडिकल बार व त्यांनी
+                    युद्धामध्ये वापरलेले साहित्य यांचे संग्रहालय उभारण्याचे
+                    नियोजन करीत आहे
+                  </h3>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- </div> -->
 
-	<div>
-		<div class="uk-background-fixed uk-background-center-center uk-height-large"
-			style="background-image: url(https://getuikit.com/docs/images/photo.jpg);">
+    <div class="uk-section uk-section-large uk-section-success uk-light">
+      <div class="uk-container">
+        <h2 class="uk-margin-medium-bottom">आप कैसे सहायता कर सकते हैं</h2>
 
-			<div class="uk-section">
-				<div class="uk-container">
-					<h1 class="uk-article-title uk-margin-medium-bottom">The Idea</h1>
-					<div class="uk-child-width-1-2@m" uk-grid
-						uk-scrollspy="cls: uk-animation-fade; target: .uk-card; delay: 500">
-						<div>
-							<div class="uk-card uk-card-default uk-card-body">
-								<h3 class="uk-card-title">Fade</h3>
-								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-							</div>
-						</div>
-						<div>
-							<div class="uk-card uk-card-default uk-card-body">
-								<h3 class="uk-card-title">Fade</h3>
-								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
+        <div class="uk-child-width-1-3@m" uk-grid>
+          <div>
+            <h4 class="uk-margin-remove">धन के रूप में योगदान द्वारा</h4>
+            <p class="uk-margin-remove">
+              आपकी राशि सुवीधाओ को बेहतर करने में सहायक होगी
+            </p>
+          </div>
+          <div>
+            <h4>स्वयंसेवकों के रूप में योगदान द्वारा</h4>
+            <p>
+              स्वयं सेवा के योगदान से हम अपना उद्देश्य तेजी से प्राप्त क्र सकते
+              हैं
+            </p>
+          </div>
+          <div>
+            <h4>नवीन विचारों के संदर्भ में योगदान द्वारा</h4>
+            <p>
+              नवीन विचारो के योगदान से हम उनकी जीवन शैली मैं होने वाली तक्लीफो
+              को कम करने के मैं अनेक मार्ग निकाल सकते हैं
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
 
+    <div class="uk-section uk-section-large">
+      <div class="uk-container">
+        <h2 class="uk-margin-medium-bottom">आधार फाऊंडेशन</h2>
+        <div class="uk-grid-match uk-child-width-1-2@m" uk-grid>
+          <div>
+            <p>
+              आधार फाउंडेशन पिछले पांच वर्षों से शहीद सैनिकों और उनके परिवारों
+              को देश की सीमाओं पर बसाने और उनके द्वारा युद्ध में इस्तेमाल किए गए
+              कपड़ों, मेडल बार और सामग्री का एक संग्रहालय स्थापित करने की योजना
+              बना रहा है। प्रथम चरण में लगभग 200 से 300 मेधावी सिपाहियों को
+              आवासीय भवन में नि:शुल्क आवास उपलब्ध कराने का प्रयास किया जा रहा
+              है। इसके अनुसार महाराष्ट्र सरकार एवं अन्य निजी कंपनियां सी.एस.आर.
+              (सी.एस.आर.) निधि के माध्यम से भव्य दिव्या के रूप में महाराष्ट्र
+              में प्रथम वीरता पुरस्कार प्राप्त सैनिकों के लिए आवासीय भवन बनाने
+              की योजना बना रही हैं।
+            </p>
+          </div>
+          <div>
+            <img
+              src="./assets/imgs/falisitation.png"
+              width="1800"
+              height="1200"
+              alt=""
+            />
+          </div>
+        </div>
+      </div>
+    </div>
 
+    <div class="uk-section uk-section-secondary uk-light">
+      <div class="uk-container">
+        <!-- <h3>आधार फाऊंडेशन</h3> -->
 
-		</div>
-	</div>
-
-	<div class="uk-section uk-section-large uk-section-success uk-light">
-		<div class="uk-container">
-	
-			<h1 class="uk-article-title uk-margin-medium-bottom">How You Can Help</h1>
-	
-			<div class="uk-grid-match uk-child-width-1-3@m" uk-grid>
-				<div>
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
-				</div>
-				<div>
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
-				</div>
-				<div>
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
-				</div>
-			</div>
-	
-		</div>
-	</div>
-
-	
-	<div class="uk-section uk-section-large">
-		<div class="uk-container">
-			<h1 class="uk-heading-small uk-margin-medium-bottom">CSR Partners</h1>
-			<ul class="uk-thumbnav uk-margin-large">
-				<li class="uk-active"><img src="https://getuikit.com/docs/images/photo.jpg" width="150" height="67" alt=""></li>
-				<li  class="uk-active"><img src="https://getuikit.com/docs/images/dark.jpg" width="150" height="67" alt=""></li>
-				<li  class="uk-active"><img src="https://getuikit.com/docs/images/light.jpg" width="150" height="67" alt=""></li>
-				<li class="uk-active"><img src="https://getuikit.com/docs/images/photo.jpg" width="150" height="67" alt=""></li>
-				<li  class="uk-active"><img src="https://getuikit.com/docs/images/dark.jpg" width="150" height="67" alt=""></li>
-				<li  class="uk-active"><img src="https://getuikit.com/docs/images/light.jpg" width="150" height="67" alt=""></li>
-				<li class="uk-active"><img src="https://getuikit.com/docs/images/photo.jpg" width="150" height="67" alt=""></li>
-			</ul>
-		</div>
-	</div>
-
-
-	<div class="uk-section uk-section-secondary uk-light">
-		<div class="uk-container">
-	
-			<h3>Footer</h3>
-	
-			<div class="uk-grid-match uk-child-width-1-3@m" uk-grid>
-				<div>
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
-				</div>
-				<div>
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
-				</div>
-				<div>
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
-				</div>
-			</div>
-	
-		</div>
-	</div>
-
-</body>
-
+        <div class="uk-grid-match uk-child-width-1-3@m" uk-grid>
+          <div>
+            <p>
+              Phone Number: 9923233770 / 9923233771
+              <br />
+              Email Id: addharfoundation205@gmail.com
+            </p>
+          </div>
+          <div>
+            <p>
+              Address: Sr No.67/5, B Road No 11B, Bhairav Nagar, Dhanori,
+              Pune-15
+            </p>
+          </div>
+          <div>
+            <p>
+              <a
+                href=""
+                class="uk-icon-button uk-margin-small-right"
+                uk-icon="twitter"
+              ></a>
+              <a
+                href=""
+                class="uk-icon-button uk-margin-small-right"
+                uk-icon="facebook"
+              ></a>
+              <a href="" class="uk-icon-button" uk-icon="youtube"></a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
 </html>

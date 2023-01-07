@@ -12,3 +12,25 @@
     box-shadow: 0 1px 6px 0 rgb(118 118 118 / 25%);
     background: #fff;
 }
+.uk-card-title{
+font-size: medium;
+}
+
+.uk-card-body {
+    display: flow-root;
+    padding: 10px 10px;
+}
+
+.uk-card-media-top>img{
+    object-fit: cover;
+    height: 200px;
+}
+.uk-card-default{
+    box-shadow: none;
+}
+
+.uk-h1, .uk-h2, .uk-h3, .uk-h4, .uk-h5, .uk-h6, .uk-heading-2xlarge, .uk-heading-large, .uk-heading-medium, .uk-heading-small, .uk-heading-xlarge, h1, h2, h3, h4, h5, h6{
+    font-family: 'Rubik', sans-serif; 
+    font-weight: 600;
+    letter-spacing: 0.5px;
+}
