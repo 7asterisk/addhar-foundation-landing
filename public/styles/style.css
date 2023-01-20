@@ -1,3 +1,14 @@
+html {
+    font-family: 'Rubik', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.5;
+    -webkit-text-size-adjust: 100%;
+    background: #fff;
+    color: #333;
+    letter-spacing: 0.5px;
+}
+
 .uk-navbar-nav>li>a {
     font-size: medium;
 }
@@ -33,4 +44,20 @@ font-size: medium;
     font-family: 'Rubik', sans-serif; 
     font-weight: 600;
     letter-spacing: 0.5px;
+}
+.uk-navbar-nav>li>a{
+    font-size: medium;
+    font-weight: 600;
+}
+.uk-navbar-nav>li.uk-active{
+    position: relative;
+}
+.uk-navbar-nav>li.uk-active::before {
+    content: "";
+    position: absolute;
+    bottom: 25px;
+    left: 0;
+    right: 0;
+    border-bottom: 2px solid currentColor;
+    transition: right .3s ease-out;
 }
