@@ -36,6 +36,12 @@ font-size: medium;
     object-fit: cover;
     height: 200px;
 }
+
+.contributer.uk-card-media-top>img{
+    object-fit: cover;
+    height: 400px;
+}
+
 .uk-card-default{
     box-shadow: none;
 }
